@@ -19,6 +19,7 @@ Steps to initialize and create repo
 11) git push -u origin master
 12) code .
 
+- created .env file and settings.py which will hold internal settings for the program and not be shown
 - make code to give command function
 - import os for bash commands in python 
 - subprocess.run(args, capture_output = TRUE) will let you do the command and then see output
