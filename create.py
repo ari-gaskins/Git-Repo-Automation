@@ -2,17 +2,17 @@ import os
 import sys
 from dotenv import load_dotenv
 
-# base path
-parent_dir = "/home/USER/Documents/Github"
-
 # user inputted new directory name
 directory = input()
 
 # makes new path
-path = os.path.join(parent_dir, directory)
+new_path = os.path.join(load_dotenv.PATH, directory)
 
 try:
-    os.mkdir(path)
+    os.mkdir(new_path)
 except OSError as error:
     print(error)
+# those ^ are the first three steps rough draft
+
+
 

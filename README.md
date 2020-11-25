@@ -20,6 +20,7 @@ Steps to initialize and create repo
 12) code .
 
 - created .env file and settings.py which will hold internal settings for the program and not be shown
+- use selenium to access webdriver (see test_selenium.py for example or Test-Selenium on github)
 - make code to give command function
 - import os for bash commands in python 
 - subprocess.run(args, capture_output = TRUE) will let you do the command and then see output
@@ -58,3 +59,6 @@ helps see mkdir() operations and os.path.join() usage
 
 https://pypi.org/project/python-dotenv/
 how to use python-dotenv
+
+https://medium.com/@prasannajyothi/explain-the-use-of-selenium-webdriver-with-python-d7fc8e2d66d3#:~:text=It%20is%20an%20open%2Dsource,way%20to%20implement%20the%20task.
+explains how to use selenium
