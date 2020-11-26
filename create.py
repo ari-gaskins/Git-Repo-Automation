@@ -1,18 +1,33 @@
 import os
 import sys
 from dotenv import load_dotenv
+from github import Github
 
-# user inputted new directory name
-directory = input()
+# load in .env file contents
+load_dotenv()
 
-# makes new path
-new_path = os.path.join(load_dotenv.PATH, directory)
+path = os.getenv('PATH')
+username = os.getenv('USERNAME')
+password = os.getenv('PASSWORD')
 
-try:
-    os.mkdir(new_path)
-except OSError as error:
-    print(error)
-# those ^ are the first three steps rough draft
+def create():
+    # create foldername as first argument
+    folderName = str(sys.argv[1])
+    os.mkdir(path + str(folderName))
+    # github methods
+    user = Github(username, password).get_user()
+    # create repo with github method
+    repo = user.create_repo(folderName)
+    # prints folderName to where the brackets are
+    # allows you to print variables as string 
+    print('Successfully created repo {}'.format(folderName))
+
+# helps module understand whether its being run directly or referenced in another program
+if __name__ == '__main__':
+    # in this case program is run directly
+    create()
+# else:
+    # program is referenced in another program
 
 
 

@@ -1,6 +1,7 @@
 # Git-Repo-Automation
 
 A python project idea I got from Kalle Hallden. This project is intended to automate the process of initializing and creating a git repository in the terminal. The goal is to use one command to do so.
+Breaking it down for python research and understanding.
 
 
 ## Project Notes
@@ -62,3 +63,9 @@ how to use python-dotenv
 
 https://medium.com/@prasannajyothi/explain-the-use-of-selenium-webdriver-with-python-d7fc8e2d66d3#:~:text=It%20is%20an%20open%2Dsource,way%20to%20implement%20the%20task.
 explains how to use selenium
+
+https://docs.python.org/3/library/sys.html?highlight=sys%20argv#sys.argv
+how sys.argv works
+
+https://medium.com/python-features/understanding-if-name-main-in-python-a37a3d4ab0c3
+explains if __name__ == '__main__' 
